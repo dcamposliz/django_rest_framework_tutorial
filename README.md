@@ -52,3 +52,9 @@ A `ViewSet` class is only bound to a set of method handlers at the last moment, 
 ### [7. Schemas and Client Libraries](http://www.django-rest-framework.org/tutorial/7-schemas-and-client-libraries/)
 
 A schema is a machine-readable document that describes the available API endpoints, their URLs, and what operations they support. Schemas can be useful for auto-generated documentation, as well as to drive dynamic client libraries that can interact with our API.
+
+In order to provide schema support, REST framework uses `coreapi`. 
+
+`coreapi` is a document specification for describing APIs. It is used to provide an internal representation format of the available endpoints and possible interactions that an API exposes. It can be used both as server-side and client-side.
+
+When used as server-side, `coreapi` allows an API to support rendering to a wide range of schema or hypermedia formats. And when used as client-side, `coreapi` allows for dynamically  driven client libraries that can interact with any API that exposes a supported schema or hypermedia format.
